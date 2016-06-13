@@ -7,7 +7,8 @@ hello = Blueprint('hello',__name__)
 @hello.route('/')
 @hello.route('/hello')
 def hello_world():
-    return MESSAGES['default']
+    user = request.args.get('user', 'ke')
+    return render_template('index.html', user=user)
 
 
 @hello.route('/show/<key>')

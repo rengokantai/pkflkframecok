@@ -1,0 +1,14 @@
+{% from '_helper.html' import render_field %}
+<html>
+  <head>
+    <title>k</title>
+  </head>
+  <body>
+    <h1>{{ user }}!</h1>
+    <p>test</p>
+  <fieldset>
+    {{ render_field('username', 'icon-user') }}
+    {{ render_field('password', 'icon-key', type='password') }}
+</fieldset>
+  </body>
+</html>

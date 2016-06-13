@@ -49,3 +49,8 @@ if request.is_xhr:
             'count': len(products)
         })
 ```
+#####Chapter 9. Internationalization and Localization
+######
+```
+pip install flask-babel
+```
